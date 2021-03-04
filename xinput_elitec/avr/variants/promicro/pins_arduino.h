@@ -93,12 +93,18 @@
 #define NUM_DIGITAL_PINS  31
 #define NUM_ANALOG_INPUTS 12
 
-// Disable auto initialization of TXLED and RXLED
+// Disable built-in access to TXLED and RXLED, they are normal input pins on the Elite-C
+#undef TXLED0
+#undef TXLED1
+#undef RXLED0
+#undef RXLED1
+#undef TX_RX_LED_INIT
+
+#define TXLED0
+#define TXLED1
+#define RXLED0
+#define RXLED1
 #define TX_RX_LED_INIT
-#define TXLED0          PORTD |= (1<<5)
-#define TXLED1          PORTD &= ~(1<<5)
-#define RXLED0          PORTB |= (1<<0)
-#define RXLED1          PORTB &= ~(1<<0)
 
 static const uint8_t SDA = 2;
 static const uint8_t SCL = 3;
