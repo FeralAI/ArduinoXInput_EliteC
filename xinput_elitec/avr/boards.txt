@@ -9,7 +9,7 @@ promicro.upload.maximum_size=28672
 promicro.upload.maximum_data_size=2560
 promicro.upload.speed=57600
 promicro.upload.disable_flushing=true
-promicro.upload.use_1200bps_touch=true
+promicro.upload.use_1200bps_touch=false
 promicro.upload.wait_for_upload_port=false
 
 promicro.bootloader.tool=avrdude
