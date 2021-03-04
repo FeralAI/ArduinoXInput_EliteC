@@ -1,0 +1,32 @@
+################################################################################
+################################## Pro Micro ###################################
+################################################################################
+promicro.name=Elite-C w/ XInput
+
+promicro.upload.tool=avrdude
+promicro.upload.protocol=flip1
+promicro.upload.maximum_size=28672
+promicro.upload.maximum_data_size=2560
+promicro.upload.speed=57600
+promicro.upload.disable_flushing=true
+promicro.upload.use_1200bps_touch=true
+promicro.upload.wait_for_upload_port=false
+
+promicro.bootloader.tool=avrdude
+promicro.bootloader.unlock_bits=0x3F
+promicro.bootloader.lock_bits=0x2F
+promicro.bootloader.low_fuses=0xFF
+promicro.bootloader.high_fuses=0xD8
+promicro.bootloader.extended_fuses=0xCB
+
+promicro.build.board=AVR_PROMICRO
+promicro.build.core=xinput:arduino
+promicro.build.variant=promicro
+promicro.build.mcu=atmega32u4
+promicro.build.usb_product="Elite-C"
+promicro.build.vid=0x045E
+promicro.build.pid.0=0x9205
+promicro.build.pid.1=0x9206
+promicro.build.pid=0x028E
+promicro.build.f_cpu=16000000L
+promicro.build.extra_flags={build.usb_flags}
