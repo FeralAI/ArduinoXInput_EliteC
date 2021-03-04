@@ -41,4 +41,4 @@ To uninstall, delete the 'xinput_elitec' folder in the 'hardware' directory, and
 
 **!!!!!!! IMPORTANT !!!!!!!**
 
-The Elite-C uses the Atmel USB DFU bootloader instead of the typical Caterina bootloader including with typical Arduino devices. In order to program, you must bridge the Reset pin to low once to enter DFU mode, then you may program directly via the Arduino IDE. `avrdude` is not able to automatically start the program after flashing, so a power cycle of the Elite-C is currently required to begin the XInput program.
+The Elite-C uses the Atmel USB DFU bootloader instead of the typical Caterina bootloader including with typical Arduino devices. In order to program, you must bridge the Reset pin to low once to enter DFU mode, then you may program directly via the Arduino IDE. `avrdude` is not able to automatically start the program after flashing. You may power cycle the Elite-C, or use Atmel FLIP to start the program.
